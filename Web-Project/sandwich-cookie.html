@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<meta charset="utf-8" />
+	<title>Sandwich Cookies| HomeMade Cookies</title>
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="icon" href="images/icon.jpg" type="jpg/image" />
+	<script src="gallery.js"></script>
+</head>
+<body class="sandwich_cookie">
+	<header>
+		<h1>HomeMade Cookies</h1>
+		<!--List of links in here -->
+		<nav>
+			<ul>
+				<li><a href="index.html" title="Home Page">Home</a></li>
+				<li><a href="history.html" title="Our History">Our History</a></li>
+				<li id="products">Products
+					<ul>
+						<li><a href="classic-cookie.html" title="Classic Cookies">Classic Cookies</a></li>
+						<li><a href="sandwich-cookie.html" title="Sandwich Cookies">Sandwich Cookies</a></li>
+						<li><a href="macaron.html" title="Macarons">Macarons</a></li>
+					</ul>
+				</li>
+				<li><a href="support.html" title="Support">Support</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<fieldset>
+			<!--Description of products -->
+			<article>
+				<h2>Sandwich Cookies</h2>
+				<p>Sandwich cookies is a type of cookie consisting of 2 cookies between which is a filling. Our best seller in this category is the peppermint sandwich cookie. Nevertheless, we still offer a variety of flavour to satisfy your taste bud.</p>
+			</article>
+			<!--Create form for PayPal to record -->
+			<form method="post" action="https://www.paypal.com/cgi-bin/webscr" >
+				<input type="hidden" name="business" value="cookie@cookies.com" />
+				<input type="hidden" name="cmd" value="_cart" />
+				<input type="hidden" name="add" value="1" />
+
+				<input type="hidden" name="sandwich_cookies" value="Sandwich Cookies" />
+				<input type="hidden" name="currency_code" value="CAD" />
+				<!--Input for flavours-->
+				<input type="hidden" name="on0" value="flavour" />
+				<img src="images/icon_choose.jpg" alt="Image of Product" id="flavour">
+				<label for="os0">Flavours</label>
+				<!--Add more options in the future-->
+					<select name="os0" id="os0" onchange="change_image(this)">
+						<option value="Select a flavour">--Select a Flavour--</option>
+						<option value="images/peppermint_sandwich.jpg" >Peppermint</option>
+						<option value="images/peanut_butter_sandwich.jpg" >Peanut Butter</option>
+						<option value="images/oreo.jpg" >Oreo</option>
+					</select>
+					<!--Input for weight-->
+				<input type="hidden" name="on1" value="Weight" />
+				<label for="os1">Weight</label>
+					<select name="os1" id="os1">
+						<!--Let customer to choose weight of cookies-->
+						<option value="Select a Weight">--Select a Weight--</option>
+						<option value="1lbs">1lbs - 15 CAD</option>
+						<option value="1lbs">2lbs - 20 CAD</option>
+						<option value="1lbs">2.5lbs - 25 CAD</option>
+					</select>
+
+				<input type="hidden" name="option_index" value="1" />
+				<input type="hidden" name="option_select0" value="1lbs" />
+				<input type="hidden" name="option_amount0" value="15" />
+				<input type="hidden" name="option_select1" value="2lbs" />
+				<input type="hidden" name="option_amount1" value="20" />
+				<input type="hidden" name="option_select2" value="2.5lbs" />
+				<input type="hidden" name="option_amount2" value="25" />
+				<!--Submit informations to Paypal to process transaction. Could be fully functioning in the future-->
+				<input class="cart" type="image" name="submit" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_addtocart_120x26.png" alt="Add to Cart" />
+				<img alt="Add to Cart" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+		</form>
+		</fieldset>
+	</main>
+	<footer>
+		<p><small>HomeMade Cookies Inc.©</small></p>
+	</footer>
+</body>
+</html>

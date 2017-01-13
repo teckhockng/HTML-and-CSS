@@ -1,0 +1,72 @@
+html{
+	background-color:#051c1c;
+	background-image: url(terminator_.jpg);
+	background-repeat:no-repeat;
+	background-size: 80em 100em;
+	background-position: top center;
+	background-attachment:scroll;
+	color:white;
+	font-family:'Trebuchet MS', sans-serif;
+	text-align:center;
+	padding: 0;
+	margin: 0;
+	border: 3px dashed blue;
+}
+header {
+	list-style-type: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin:0 0 40px 0;
+}
+header ul li {
+	display: inline-block;
+	margin:0 20px;
+	color: green;
+	text-decoration: underline;
+	font-weight: bold;
+	text-shadow: 2px 2px aquamarine;
+	font-family: "Arial Rounded MT Bold", "Courier New", Constantia, sans-serif;
+}
+blockquote {
+	display: inline-block;
+	width: 28%;
+	font-size: 1.6em;
+	font-style: italic;
+	color: red;
+	text-shadow: 1px 1px antiquewhite;
+	font-family: "Brush Script MT Italic", Tahoma, "Bell MT",serif;
+	text-decoration: underline;
+}
+blockquote.first {
+	padding-right: 12em;
+	text-align: left;
+	position:static;
+}
+blockquote.second {
+	text-align: right;
+	position: static;
+}
+blockquote.third {
+	padding-right: auto;
+	padding-left: auto;
+	padding-top: 5em;
+	position: static;
+}
+footer {
+	display: block;
+	font-size: 80%;
+	color: gold;
+	padding-top: 30em;
+	font-style: oblique;
+	font-family: "Copperplate Gothic", Corbel, Calibri, sans-serif;
+}
+h1 {
+	font-size: 4em;
+	position: relative;
+	padding-top: 5em;
+	text-decoration:overline;
+	color: grey;
+	text-shadow: 5px 5px 2px white;
+	font-family: Elephant, "Impact Regular", "Cooper Black",serif;
+	position: static;
+}

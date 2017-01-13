@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<meta charset="utf-8" />
+	<title>Macaron| HomeMade Cookies</title>
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="icon" href="images/icon.jpg" type="jpg/image" />
+	<script src="gallery.js"></script>
+</head>
+<body class="macaron">
+	<header>
+		<h1>HomeMade Cookies</h1>
+		<!--List of links in here -->
+		<nav>
+			<ul>
+				<li><a href="index.html" title="Home Page">Home</a></li>
+				<li><a href="history.html" title="Our History">Our History</a></li>
+				<li id="products">Products
+					<ul>
+						<li><a href="classic-cookie.html" title="Classic Cookies">Classic Cookies</a></li>
+						<li><a href="sandwich-cookie.html" title="Sandwich Cookies">Sandwich Cookies</a></li>
+						<li><a href="macaron.html" title="Macarons">Macarons</a></li>
+					</ul>
+				</li>
+				<li><a href="support.html" title="Support">Support</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<fieldset>
+			<!--Description of products -->
+			<article>
+				<h2>Macaron</h2>
+				<p>Macaron is a sweet meringue-based confection made with egg white, icing sugar, granulated sugar, almond powder or ground almond, and food colouring. The confection is characterized by a smooth squared top, a ruffled circumference (referred to as the "foot" or "pied"), and a flat base. It is mildly moist and easily melts in the mouth.</p>
+			</article>
+			<!--Create form for PayPal to record -->
+			<form method="post" action="https://www.paypal.com/cgi-bin/webscr" >
+				<input type="hidden" name="business" value="cookie@cookies.com" />
+				<input type="hidden" name="cmd" value="_cart" />
+				<input type="hidden" name="add" value="1" />
+
+				<input type="hidden" name="sandwich_cookies" value="Macaron" />
+				<input type="hidden" name="currency_code" value="CAD" />
+				<!--Input for flavours-->
+				<input type="hidden" name="on0" value="flavour" />
+				<img src="images/icon_choose.jpg" alt="" id="flavour">
+				<label for="os0">Flavours</label>
+				<!--Add more options in the future-->
+					<select name="os0" id="os0" onchange="change_image(this)">
+						<option value="Select a flavour">--Select a Flavour--</option>
+						<option value="images/lemon_macaron.png" >Lemon</option>
+						<option value="images/pistachio_macaron.png" >Pistachio</option>
+						<option value="images/chocolate_macaron.png" >Chocolate</option>
+					</select>
+					<!--Input for weight-->
+				<input type="hidden" name="on1" value="Weight" />
+				<label for="os1">Weight</label>
+				<!--Let customer to choose weight of cookies-->
+					<select name="os1" id="os1">
+						<option value="Select a Weight">--Select a Weight--</option>
+						<option value="1lbs">1lbs - 15 CAD</option>
+						<option value="1lbs">2lbs - 25 CAD</option>
+						<option value="1lbs">2.5lbs - 30 CAD</option>
+					</select>
+
+				<input type="hidden" name="option_index" value="1" />
+				<input type="hidden" name="option_select0" value="1lbs" />
+				<input type="hidden" name="option_amount0" value="15" />
+				<input type="hidden" name="option_select1" value="2lbs" />
+				<input type="hidden" name="option_amount1" value="25" />
+				<input type="hidden" name="option_select2" value="2.5lbs" />
+				<input type="hidden" name="option_amount2" value="30" />
+				<!--Submit informations to Paypal to process transaction. Could be fully functioning in the future-->
+				<input class="cart" type="image" name="submit" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_addtocart_120x26.png" alt="Add to Cart" />
+				<img alt="Add to Cart" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+		</form>
+		</fieldset>
+	</main>
+	<footer>
+		<p><small>HomeMade Cookies Inc.©</small></p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+html{
+	background-color: #32689A;
+}
+
+body{
+	font: 125%/1.5 "Matura MT Script Capitals", Verdana, sans-serif;
+	color: #333;
+	margin: 20px auto;
+	padding: 0;
+	background-color: #8FBC8F;
+	border-radius: 10px;
+	background-position: center;
+}
+
+#header{
+	width: 900px;
+	margin: 20px auto 0 auto;
+	height: 100px;
+}
+
+#header h1{
+	float: left;
+	margin: 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 70px;
+	height: 70px;
+}
+
+#header h2{
+	text-align: right;
+	font-weight: normal;
+	margin: 0;
+	padding-top: 0.5em;
+	color: #FFF;
+}
+
+fieldset {
+	border: 1px solid #000000;
+	margin: 1em 0;
+	background-color: #7FFFD4;
+	margin-bottom: 0.5em;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+legend {
+	font-size: 120%;
+	font-family: cursive;
+	text-shadow: 2px 2px #b3ffb3;
+	text-transform: uppercase;
+	color: #228B22;
+}
+
+label {
+	text-shadow: 2px 2px #00aaff;
+	display: block;
+	width: 200px;
+	text-align: left;
+	padding-right: 1em;
+	font-size: 100%;
+}
+
+input[required] {
+
+}
+
+label.error {
+	color: red;
+	float: right;
+}
+
+label img {
+	vertical-align: middle;
+}
+
+small {
+	font-size: 70%;
+}
+
+input{
+	width: 300px;
+	height: 20px;
+}

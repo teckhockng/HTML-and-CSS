@@ -1,0 +1,58 @@
+/* External CSS to control styling of text */
+
+/* STEP 2: Add a base font to the html or body */
+html {
+	font-family: Verdana, "Trebuchet MS", "Times New Roman", serif;
+}
+/* STEP 13: Construct a declaration for the page text using the shorthand font syntax */
+body {
+	 font: Verdana, normal, bold, 2em, inherit, cursive; 
+}
+/* STEP 3: Add a base color to the html or body */
+html {
+	color: #44ee00; violet;
+}
+/* STEP 4: Try absolute vs. relative sizing of text for headings */
+html {
+	font-size: 1.5em;
+}
+h1 {
+	font-size: 300%;
+}
+/* STEP 8: Apply font-variant to h1 or h2 (small-caps) */
+h2 {
+	font-variant:small-caps;
+}
+
+/* STEP 9: Apply underline, overline and strikethrough to the h1 */
+h1{
+	text-decoration: underline;
+}
+/* STEP 10: Modify the letter and word spacing for the h2 */
+h2{
+	letter-spacing: normal;
+	word-spacing: normal;
+}
+/* STEP 12: Transform the text of the h2 (none | capitalize | uppercase | lowercase | full-width) */
+h2{
+	text-transform: capitalize;
+}
+/* STEP 5: Line height for paragraphs (leading) */
+p {
+	line-height: 1.5;
+}
+/* STEP 11: Change the indenting of the paragraphs */
+p{
+	text-indent: inherit;
+}
+/* STEP 6: Align text left, right, center and justify for paragraphs */
+p {
+	text-align: center;
+}
+/* STEP 7: Modify bold and italics, by applying to strong and em */
+strong {
+	font-weight: normal;
+}
+em {
+	font-weight: normal;
+}

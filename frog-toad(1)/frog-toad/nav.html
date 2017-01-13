@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Navigation Lists | Frog &amp; Toad</title>
+		<style>
+			body {
+				font-family: Helvetica, Arial, sans-serif;
+			}
+			/* STEP 1: Outline all elements to help with styling */
+			ul {
+				border: 3px solid red;
+				display: inline-flex;
+				/* STEP 2: Zero out padding/margins */
+				margin: 0;
+				padding: 0;
+
+				/* STEP 3: Turn off list markers */
+				list-style-type: none;
+			}
+			li {
+				border: 3px solid orange;
+				/* STEP 4: Arrange the list items horizontally */
+				display: inline-block;
+				/* STEP 6: Set position of 1st-level LI to relative so 2nd-level ULs can be placed with respect to their parent LI */
+				position: relative;
+			}
+			li ul {
+				/* STEP 7: Position 2nd-level lists (ULs) */
+				position: absolute;
+
+				/* STEP 8: Hide the 2nd-level lists */
+				/*left: -9999px;*/
+				/*display: none;*/
+				visibility: hidden;
+				width: 250px;
+			}
+			/* STEP 5: Arrange the 2nd-level list items vertically again */
+			li li {
+				display: block;
+			}
+			li a {
+				background-color: lightblue;
+				/* STEP 10: Set anchors to function as full-width clickable bars */
+				display: block;
+				padding: 1em;
+			}
+			/* STEP 9: Show the 2nd-level list when the parent LI is moused over */
+			li:hover ul{
+				/*left: auto;*/
+				/*display: block;*/
+				visibility: visible;
+
+			}
+			li:hover a{
+				background-color: white;
+			}
+			main {
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Frog &amp; Toad</h1>
+			<p>A series of easy-reader children&rsquo;s books, written and illustrated by <cite>Arnold Lobel</cite></p>
+			<nav>
+				<ul>
+					<li><a href="" title="">Frog &amp; Toad Are Friends</a>
+						<ul>
+							<li><a href="" title="">Spring</a></li>
+							<li><a href="" title="">The Story</a></li>
+							<li><a href="" title="">A Lost Button</a></li>
+							<li><a href="" title="">A Swim</a></li>
+							<li><a href="" title="">The Letter</a></li>
+						</ul>
+					</li>
+					<li><a href="" title="">Frog &amp; Toad Together</a>
+						<ul>
+							<li><a href="" title="">A List</a></li>
+							<li><a href="" title="">The Garden</a></li>
+							<li><a href="" title="">Cookies</a></li>
+							<li><a href="" title="">Dragons and Giants</a></li>
+							<li><a href="" title="">The Dream</a></li>
+						</ul>
+					</li>
+					<li><a href="" title="">Frog &amp; Toad All Year</a>
+						<ul>
+							<li><a href="" title="">Down The Hill</a></li>
+							<li><a href="" title="">The Corner</a></li>
+							<li><a href="" title="">Ice Cream</a></li>
+							<li><a href="" title="">The Surprise</a></li>
+							<li><a href="" title="">Christmas Eve</a></li>
+						</ul>
+					</li>
+					<li><a href="" title="">Days With Frog &amp; Toad</a>
+						<ul>
+							<li><a href="" title="">Tomorrow</a></li>
+							<li><a href="" title="">The Kite</a></li>
+							<li><a href="" title="">Shivers</a></li>
+							<li><a href="" title="">The Hat</a></li>
+							<li><a href="" title="">Alone</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h2>The Timeless Amphibious Friends from Arnold Lobel</h2>
+			<p><img src="images/frog_and_toad_with_snail.jpg" alt="Frog and Toad accept a letter from snail">Frog and Toad are the main characters in a series of easy-reader children's books, written and illustrated by Arnold Lobel.</p>
+			<p>Each book contains five simple, often humorous, sometimes poignant, short stories chronicling the exploits of a frog and his friend, a toad, simply named Frog and Toad. Some of their adventures include: attempting to fly a kite, cleaning Toad's messy house as opposed to waiting until "Tomorrow" to do so, and figuring out the ethics of being "Alone".</p>
+			<p>The two protagonists do carry specific traits about their personalities and appearance. Frog is taller, with a green shade, and is more friendly and relaxed than Toad; Toad is shorter and stout, with a brown shade and also the more serious and irritable of the duo.</p>
+			<p>Taken from the article, <cite><a href="http://en.wikipedia.org/wiki/Frog_and_Toad" title="Read about Frog and Toad at Wikipedia">Frog and Toad</a></cite> at <a href="http://wikipedia.org/" title="Wikipedia: The Free Encyclopedia">Wikipedia</a></p>
+		</main>
+		<footer>
+			<p><small>Text is available under the <a href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" title="Learn more about Creative Commons">Creative Commons Attribution-ShareAlike License</a>; additional terms may apply. See the <a href="http://wikimediafoundation.org/wiki/Terms_of_use" title="Learn more about Wikipedia's terms of use">Wikipedia Terms of use</a> for details.</small></p>
+		</footer>
+	</body>
+</html>

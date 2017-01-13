@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<meta charset="utf-8">
+	<title>Order Form</title>
+	<link rel="stylesheet" href="lightbulb.css"/>
+</head>
+<body>
+	<header>
+		<h1>Order Form</h1>
+	</header>
+	<main>
+		<form id="edit_payment_info" method="post" action="process-form.php">
+			<input type="hidden" name="form_sent" value="1" />
+			<fieldset>
+				<legend>Product Information</legend>
+
+				<label for="ptype">Product Type</label>
+				<select id="ptype" name="ptype">
+					<option value="choose">choose...</option>
+					<option value="LED" title="Light-Emitting Diode">LED</option>
+					<option value="fluorescent">Fluorescent</option>
+					<option value="halogen">Halogen Bulb</option>
+				</select>
+
+				<label for="color">Bulb Colour</label>
+				<input type="color" id="color"/>
+
+				<label for="range">Watt Usage Rate</label>
+				<input type="range" id="range"/>
+			</fieldset>
+			<fieldset>
+				<legend>Billing Address</legend>
+
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="fname" size="50" maxlength="25" placeholder="Type your first name here" required="required"/>
+
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lname" size="50" maxlength="25" placeholder="Type your last name here" required="required"/>
+
+				<label for="address">Address</label>
+				<input type="text" id="address" name="address" size="50" maxlength="50" placeholder="Enter your address here" required="required"/>
+
+				<label for="province">Province</label>
+				<select id="province" name="province">
+					<option value="choose">choose…</option>
+					<option value="AB">Alberta</option>
+					<option value="BC">British Colombia</option>
+					<option value="ON">Ontario</option>
+					<option value="MB">Manitoba</option>
+					<option value="NB">New Brunswick</option>
+					<option value="NL">Newfoundland</option>
+					<option value="NT">Northwest Territories</option>
+					<option value="NS">Nova Scotia</option>
+					<option value="NV">Nunavut</option>
+					<option value="PE">Prince Edward Island</option>
+					<option value="PQ">Québec</option>
+					<option value="SK">Saskatchewan</option>
+					<option value="YK">Yukon Territory</option>
+				</select>
+
+				<label for="phone">Phone</label>
+				<input id="phone" type="tel" name="phone" />
+
+				<label for="email">Email</label>
+				<input id="email" type="email" name="email" />
+			</fieldset>
+
+			<fieldset>
+				<legend>Credit Card Details</legend>
+				<label for="amex"><img src="amex_logo.gif" alt="American Express" /> American Express</label>
+				<input type="radio" name="cctype" id="amex" value="amex" />
+
+				<label for="mc"><img src="mc_logo.gif" alt="MasterCard" /> MasterCard</label>
+				<input type="radio" name="cctype" id="mc" value="mc" />
+
+				<label for="VISA"><img src="visa_logo.gif" alt="VISA" /> VISA </label>
+				<input type="radio" name="cctype" id="VISA" value="VISA" />
+
+				<label for="ccnumber">Credit Card Number</label>
+				<input id="ccnumber" type="text" name="ccnumber" value="" />
+
+				<label for="ccexpireyear">Expiration Year</label>
+				<select name="ccexpireyear" id="ccexpireyear">
+					<option value="2016"> 2016 </option>
+					<option value="2017"> 2017 </option>
+					<option value="2018"> 2018 </option>
+					<option value="2019"> 2019 </option>
+					<option value="2020"> 2020 </option>
+				</select>
+
+				<label for="ccexpiremonth">Expiration Month</label>
+				<select name="ccexpiremonth" id="ccexpiremonth">
+					<option value="choose">choose…</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<legend>Keep Me Informed</legend>
+				<label for="marketing1">Newsletter</label>
+				<input type="checkbox" name="marketing[]" id="marketing1" value="newsletter" />
+
+				<label for="comments">Comments</label>
+				<textarea id="comments" name="comment" cols="40" rows="5" class="field-large"></textarea>
+			</fieldset>
+			<input type="submit" value="Checkout" />
+		</form>
+	</main>
+	<footer>
+		<p><small>MasterCard®, AmericanExpress®, VISA® All rights reserved </small></p>
+	</footer>
+</body>
+</html>

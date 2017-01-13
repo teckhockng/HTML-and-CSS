@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lists | Frog and Toad</title>
+	<meta charset="utf-8">
+	<style>
+		body {
+			font-family: Helvetica, Arial, sans-serif;
+		}
+		ul{
+			/* List Style Type*/
+			list-style-type: square;
+			/* List Style Position*/
+			list-style-position: inside;
+		}
+		ol{
+			/* List Style Type*/
+			list-style-type: upper-latin;
+		}
+		ol li {
+			/*Display List Horizontally*/
+			outline: 2px dotted red;
+			display: inline-block;
+			width: 200px;
+			height: 50px;
+			text-align: auto;
+		}
+		nav ul{
+			/*List Style Image*/
+			list-style-image: url("images/bullet_star.png");
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1><img src="images/frog_and_toad_with_snail.jpg" alt="Frog, Toad, and Snail" width="300" height="299" style="float: right;">Lists</h1>
+	</header>
+	<main>
+		<!-- Unordered Lists -->
+		<h2>Unordered List</h2>
+		<ul>
+			<li>Frog</li>
+			<li>Toad</li>
+			<li>Snail</li>
+		</ul>
+		<!-- Ordered Lists -->
+		<h2>Ordered List</h2>
+		<ol>
+			<li>Wake up</li>
+			<li>Eat breakfast</li>
+			<li>Get dressed</li>
+			<li>Go to Frog's house</li>
+		</ol>
+
+		<!-- Definition Lists -->
+		<h2>Definition List</h2>
+		<dl>
+			<dt>Frog</dt>
+			<dd>A slimy green amphibian</dd>
+			<dd>Found in lakes, rivers and ponds</dd>
+			<dt>Toad</dt>
+			<dd>A warty brown amphibian</dd>
+			<dt>Snail</dt>
+			<dd>A small brown mollusk</dd>
+		</dl>
+		<!-- Lists as Navigation -->
+		<h2>List as Navigation</h2>
+		<nav>
+			<ul>
+				<li><a href="" title="">Frogs</a>
+					<ul>
+						<li><a href="" title="">Bull Frogs</a>
+							<ul>
+								<li><a href="" title="">Americas</a></li>
+								<li><a href="" title="">Africa</a></li>
+								<li><a href="" title="">Asia</a></li>
+							</ul>
+						</li>
+						<li><a href="" title="">Leopard Frogs</a></li>
+						<li><a href="" title="">Tree Frogs</a></li>
+					</ul>
+				</li>
+				<li><a href="" title="">Toad</a></li>
+				<li><a href="" title="">Snail</a></li>
+			</ul>
+		</nav>
+	</main>
+	<footer>
+		<p><small>© Lists | Frog and Toad</small></p>
+	</footer>
+</body>
+</html>
